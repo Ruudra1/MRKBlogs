@@ -2,7 +2,7 @@
 
                 <!-- LOGO -->
                 <div class="topbar-left">
-                    <a href="index.html" class="logo"><span>NEWS<span>PORTAL</span></span><i class="mdi mdi-layers"></i></a>
+                    <a href="index.html" class="logo"><span>MRK<span>BLOGS</span></span><i class="mdi mdi-layers"></i></a>
                     <!-- Image logo -->
                     <!--<a href="index.html" class="logo">-->
                         <!--<span>-->
@@ -43,7 +43,7 @@
                                         <h5>Hi, Admin</h5>
                                     </li>
                               
-                                    <li><a href="change-password.php"><i class="ti-settings m-r-5"></i> Chnage Password</a></li>
+                                    <li><a href="change-password.php"><i class="ti-settings m-r-5"></i> Change Password</a></li>
                            
                                     <li><a href="logout.php"><i class="ti-power-off m-r-5"></i> Logout</a></li>
                                 </ul>
