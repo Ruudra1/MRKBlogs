@@ -74,10 +74,8 @@ echo "<script>alert('User not registered with us');</script>";
                                     <h2 class="text-uppercase">
                                         <a href="../index.php" class="text-white">
                                             MRK BLOGS
-                                            <!-- <span><img src="assets/images/mrk2.png" alt="" height="56"></span> -->
                                         </a>
                                     </h2>
-                                    <!--<h4 class="text-uppercase font-bold m-b-0">Sign In</h4>-->
                                 </div>
                                 <div class="account-content">
                                     <form class="form-horizontal" method="post">
