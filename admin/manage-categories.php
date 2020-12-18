@@ -118,7 +118,7 @@ if($_GET['action']=='parmdel' && $_GET['rid'])
 
 
                                     <div class="row">
-										<div class="col-md-12">
+										<div class="col-md-8">
 											<div class="demo-box m-t-20">
 <div class="m-b-30">
 <a href="add-category.php">
@@ -134,8 +134,8 @@ if($_GET['action']=='parmdel' && $_GET['rid'])
                                                                 <th> Category</th>
                                                                 <th>Description</th>
                                                           
-                                                                <th>Posting Date</th>
-                                                                  <th>Last updation Date</th>
+                                                                <!-- <th>Posting Date</th>
+                                                                  <th>Last updation Date</th> -->
                                                                 <th>Action</th>
                                                             </tr>
                                                         </thead>
@@ -151,8 +151,8 @@ while($row=mysqli_fetch_array($query))
 <th scope="row"><?php echo htmlentities($cnt);?></th>
 <td><?php echo htmlentities($row['CategoryName']);?></td>
 <td><?php echo htmlentities($row['Description']);?></td>
-<td><?php echo htmlentities($row['PostingDate']);?></td>
-<td><?php echo htmlentities($row['UpdationDate']);?></td>
+<!-- <td><?php echo htmlentities($row['PostingDate']);?></td>
+<td><?php echo htmlentities($row['UpdationDate']);?></td> -->
 <td><a href="edit-category.php?cid=<?php echo htmlentities($row['id']);?>"><i class="fa fa-pencil" style="color: #29b6f6;"></i></a> 
 	&nbsp;<a href="manage-categories.php?rid=<?php echo htmlentities($row['id']);?>&&action=del"> <i class="fa fa-trash-o" style="color: #f05050"></i></a> </td>
 </tr>
@@ -178,7 +178,7 @@ $cnt++;
 
                                     
 <div class="row">
-<div class="col-md-12">
+<div class="col-md-8">
 <div class="demo-box m-t-20">
 <div class="m-b-30">
 
@@ -194,8 +194,8 @@ $cnt++;
                                                                 <th> Category</th>
                                                                 <th>Description</th>
                                                           
-                                                                <th>Posting Date</th>
-                                                                  <th>Last updation Date</th>
+                                                                <!-- <th>Posting Date</th>
+                                                                  <th>Last updation Date</th> -->
                                                                 <th>Action</th>
                                                             </tr>
                                                         </thead>
@@ -211,8 +211,8 @@ while($row=mysqli_fetch_array($query))
 <th scope="row"><?php echo htmlentities($cnt);?></th>
 <td><?php echo htmlentities($row['CategoryName']);?></td>
 <td><?php echo htmlentities($row['Description']);?></td>
-<td><?php echo htmlentities($row['PostingDate']);?></td>
-<td><?php echo htmlentities($row['UpdationDate']);?></td>
+<!-- <td><?php echo htmlentities($row['PostingDate']);?></td>
+<td><?php echo htmlentities($row['UpdationDate']);?></td> -->
 <td><a href="manage-categories.php?resid=<?php echo htmlentities($row['id']);?>"><i class="ion-arrow-return-right" title="Restore this category"></i></a> 
 	&nbsp;<a href="manage-categories.php?rid=<?php echo htmlentities($row['id']);?>&&action=parmdel" title="Delete forever"> <i class="fa fa-trash-o" style="color: #f05050"></i> </td>
 </tr>

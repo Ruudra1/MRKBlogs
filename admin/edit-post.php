@@ -110,7 +110,7 @@ function getSubCat(val) {
                                             <a href="#"> Posts </a>
                                         </li>
                                         <li class="active">
-                                            Add Post
+                                            Edit Post
                                         </li>
                                     </ol>
                                     <div class="clearfix"></div>
@@ -184,7 +184,7 @@ while($result=mysqli_fetch_array($ret))
 <div class="col-sm-12">
  <div class="card-box">
 <h4 class="m-b-30 m-t-0 header-title"><b>Post Details</b></h4>
-<textarea class="summernote" name="postdescription" required><?php echo htmlentities($row['PostDetails']);?></textarea>
+<textarea class="" name="postdescription" required><?php echo htmlentities($row['PostDetails']);?></textarea>
 </div>
 </div>
 </div>

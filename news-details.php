@@ -77,20 +77,18 @@ while ($row=mysqli_fetch_array($query)) {
             <div class="card-body">
               <h2 class="card-title"><?php echo htmlentities($row['posttitle']);?></h2>
               <p><b>Category : </b> <a href="category.php?catid=<?php echo htmlentities($row['cid'])?>"><?php echo htmlentities($row['category']);?></a> |
-                <b>Sub Category : </b><?php echo htmlentities($row['subcategory']);?> <b> Posted on </b><?php echo htmlentities($row['postingdate']);?></p>
+                 
+                <b> Posted on </b><?php echo htmlentities($row['postingdate']);?></p>
                 <hr />
 
- <img class="img-fluid rounded" src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" alt="<?php echo htmlentities($row['posttitle']);?>">
+ <!-- <img class="img-fluid rounded" src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" alt="<?php echo htmlentities($row['posttitle']);?>"> -->
   
               <p class="card-text"><?php 
 $pt=$row['postdetails'];
               echo  (substr($pt,0));?></p>
              
             </div>
-            <div class="card-footer text-muted">
-             
-           
-            </div>
+            
           </div>
 <?php } ?>
        
@@ -107,7 +105,7 @@ $pt=$row['postdetails'];
       <!-- /.row -->
 <!---Comment Section --->
 
- <div class="row" style="margin-top: -8%">
+ <!-- <div class="row" style="margin-top: -8%">
    <div class="col-md-8">
 <div class="card my-4">
             <h5 class="card-header">Leave a Comment:</h5>
@@ -129,11 +127,11 @@ $pt=$row['postdetails'];
                 <button type="submit" class="btn btn-primary" name="submit">Submit</button>
               </form>
             </div>
-          </div>
+          </div> -->
 
   <!---Comment Display Section --->
 
- <?php 
+ <!-- <?php 
  $sts=1;
  $query=mysqli_query($con,"select name,comment,postingDate from  tblcomments where postId='$pid' and status='$sts'");
 while ($row=mysqli_fetch_array($query)) {
@@ -147,7 +145,7 @@ while ($row=mysqli_fetch_array($query)) {
            
              <?php echo htmlentities($row['comment']);?>            </div>
           </div>
-<?php } ?>
+<?php } ?> -->
 
         </div>
       </div>

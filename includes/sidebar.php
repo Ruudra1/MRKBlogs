@@ -1,7 +1,7 @@
   <div class="col-md-4">
 
           <!-- Search Widget -->
-          <div class="card mb-4">
+          <!-- <div class="card mb-4">
             <h5 class="card-header">Search</h5>
             <div class="card-body">
                    <form name="search" action="search.php" method="post">
@@ -14,11 +14,11 @@
               </form>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- Categories Widget -->
           <div class="card my-4">
-            <h5 class="card-header">Categories</h5>
+            <h2 class="card-header">Read In</h2>
             <div class="card-body">
               <div class="row">
                 <div class="col-lg-6">
@@ -40,7 +40,7 @@ while($row=mysqli_fetch_array($query))
           </div>
 
           <!-- Side Widget -->
-          <div class="card my-4">
+          <!-- <div class="card my-4">
             <h5 class="card-header">Recent Blogs</h5>
             <div class="card-body">
                       <ul class="mb-0">
@@ -56,6 +56,28 @@ while ($row=mysqli_fetch_array($query)) {
             <?php } ?>
           </ul>
             </div>
+          </div> -->
+
+
+          <div class="card my-4">
+            <h2 class="card-header">Want to post here?</h2>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-12">
+                <h6>write us on</h6>
+                  <h4>mrk.blogs@gmail.com</h4>
+                </div>
+       
+              </div>
+            </div>
           </div>
 
+          
+
+        
+
+
+
         </div>
+
+        
